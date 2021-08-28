@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #content {
+            padding: 20px;
+            border: 2px solid green;
+            border-radius: 5px;
+            box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+            outline: none;
+            width: 50vw;
+            min-height: 300px;
+            margin: 1rem auto;
+            z-index: 50;
+        }
+        
+        .text1 {
+            background: linear-gradient(blue, pink);
+            margin: 3rem auto;
+            border: 10px solid black;
+        }
+        
+        .options {
+            display: flex;
+            width: 50vw;
+            justify-content: space-evenly;
+            margin-top: 2rem;
+        }
+        /* Styling on alll three buttons */
+        
+        .rock,
+        .paper,
+        .scissor {
+            padding: 0.8rem;
+            /* width: 100px; */
+            border-radius: 10px;
+            /* background: green; */
+            outline: none;
+            border-color: green;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .img1 {
+            /* font-size: 10px; */
+            height: 40px;
+        }
+        
+        .score {
+            display: flex;
+            /* width: 30vw; */
+            justify-content: space-evenly;
+            /* position: absolute; */
+            top: 70px;
+            z-index: 1;
+        }
+        /* Score */
+        
+        .p1-count,
+        .p2-count {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <div class="text1">
+        <!-- <button class="btn1"> + </button> -->
+        <div id="content">
+            <div class="score">
+                <div class="player1Score">
+                    <h2>Player1</h2>
+                    <p class="p1-count count">0</p>
+                </div>
+                <div class="player2Score">
+                    <h2>Player2</h2>
+                    <p class="p2-count count">0</p>
+                </div>
+            </div>
+            <div class="options">
+                <button class="rock"><img class='img1' src="rock2.png"  /> rock</button>
+                <button class="paper"><img class='img1' src="ppr1.png" />paper</button>
+                <button class="scissor"><img class='img1' src="scis1 (1).png" />scissor</button>
+            </div>
+        </div>
+        <!-- <div class="addP "> -->
+        <!-- <div id="content" contenteditable="true" spellcheck="false"></div> -->
+        <!-- </div> -->
+
+    </div>
+</body>
+
+</html>
